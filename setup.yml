@@ -1,0 +1,9 @@
+- hosts: all 
+  vars_files:
+    - creds.yml
+  tasks: 
+  - name: register to the CDN 
+    shell: "subscription-manager register --username {{user}} --password {{pass}}"
+    ignore_errors: true 
+  - shell: "subscription-manager attach --pool {{pool}}"
+  - shell: "podman login registry.redhat.io --username {{user}} --password {{pass}}"

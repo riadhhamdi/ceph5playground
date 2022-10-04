@@ -1,0 +1,11 @@
+workstation.example.com
+ctrl01.example.com
+proxy01.example.com
+proxy02.example.com
+ceph-node01.example.com
+ceph-node02.example.com
+ceph-node03.example.com
+ceph-mon01.example.com
+ceph-mon02.example.com
+ceph-mon03.example.com
+haproxy01.example.com
